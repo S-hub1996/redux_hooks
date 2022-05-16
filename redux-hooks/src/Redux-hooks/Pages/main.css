@@ -1,0 +1,266 @@
+.register,
+.login {
+  width: 60%;
+  margin: 40px auto;
+  display: grid;
+  place-items: center;
+}
+
+.register > div > h1,
+.login > div > h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.register > div > form > input,
+.login > div > form > input {
+  width: 500px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #111;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #111;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loading {
+  width: 60%;
+  margin: auto;
+  height: 100px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.flex {
+  width: 100%;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile_heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.profile_heading > .profile_avatar {
+  background-color: crimson;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+.profile_sub {
+  width: 50%;
+  margin: 1rem auto;
+}
+.profile_flex {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.profile_pass {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.profile_flex > div > input {
+  pointer-events: none;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.mainSection {
+  width: 100%;
+  display: flex;
+}
+
+.sideSection {
+  width: 20%;
+}
+.sideSection > .sideBar {
+  position: fixed;
+  top: 4.5rem;
+  padding: 2rem 1rem;
+  width: 14rem;
+  height: 90vh;
+  border-right: 2px solid #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sideBar_top {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.sideBar_top > .side_avatar {
+  background-color: hsl(348, 83%, 47%);
+  color: #fff;
+  padding: 0.2rem 1rem;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+
+.sideBar_middle > p {
+  text-align: center;
+  padding: 0.2rem 4rem;
+  border: 2px solid;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+  border-radius: 0.8rem;
+}
+
+.sideBar_middle > p:nth-child(1) {
+  border-color: hsl(210, 79%, 46%);
+  color: hsl(210, 79%, 46%);
+}
+.sideBar_middle > p:nth-child(2) {
+  border-color: hsl(21, 79%, 46%);
+  color: hsl(21, 79%, 46%);
+}
+.sideBar_middle > p:nth-child(3) {
+  border-color: hsl(283, 79%, 46%);
+  color: hsl(283, 79%, 46%);
+}
+.sideBar_middle > p:nth-child(4) {
+  border-color: hsl(35, 86%, 56%);
+  color: hsl(35, 86%, 56%);
+}
+
+.todoSection {
+  width: 90%;
+}
+
+.todoSection > .todoNav {
+  padding: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.todoSection > .todoNav > a {
+  color: #111;
+  text-decoration: none;
+}
+
+.todoNav > .active {
+  border-bottom: 3px solid #111;
+  font-weight: 700;
+}
+
+.AddTodo {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.AddTodo > .form {
+  width: 86%;
+  padding: 2rem;
+  height: 100%;
+}
+
+.formFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formFlex > .input > input,
+.formFlex > .input > textarea {
+  width: 400px;
+  height: 40px;
+  font-size: 16px;
+  resize: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #111;
+  margin-bottom: 20px;
+}
+
+.AddTodo > .form > input[type="submit"] {
+  width: 50%;
+  height: 40px;
+}
+
+.todoItems {
+  height: 70vh;
+  overflow-y: auto;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.todoItems > .todo {
+  background-color: hsl(135, 89%, 78%);
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem;
+}
+.todoItems > .progress {
+  background-color: hsl(61, 100%, 79%);
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem;
+}
+.todoItems > .done {
+  background-color: hsl(255, 100%, 86%);
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.todoItems > div > .item {
+  border: 1px solid #111;
+  margin: 0.8rem 0;
+  padding: 1rem;
+  width: 18rem;
+}
+
+.itemFlex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: 0.4rem 0;
+}
+
+.itemFlex > p:nth-child(1) {
+  border: 2px solid #111;
+  text-transform: capitalize;
+  padding: 0.1rem 0.4rem;
+}
+
+.summary > p {
+  border: 2px solid #111;
+  width: 10rem;
+  margin: 1rem 0;
+  padding: 0.4rem;
+}
